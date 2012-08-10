@@ -55,7 +55,7 @@
 - (void)layoutSubviews {
     [_spinnerLayer setFrame:self.bounds];
     [_spinnerLayer setHeadColor:self.color];
-    [_spinnerLayer setTailColor:[UIColor whiteColor]];  //tail color
+    [_spinnerLayer setTailColor:[UIColor clearColor]];  //tail color
     [_spinnerLayer setNeedsDisplay];
 }
 
