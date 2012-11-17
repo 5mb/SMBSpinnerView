@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18881DE31657FD5800C64055 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 18881DE21657FD5800C64055 /* image.png */; };
 		BE0F4A9515D3CACE005D7D69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0F4A9415D3CACE005D7D69 /* UIKit.framework */; };
 		BE0F4A9715D3CACE005D7D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0F4A9615D3CACE005D7D69 /* Foundation.framework */; };
 		BE0F4A9915D3CACE005D7D69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0F4A9815D3CACE005D7D69 /* CoreGraphics.framework */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18881DE21657FD5800C64055 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = SOURCE_ROOT; };
 		BE0F4A9015D3CACE005D7D69 /* SMBSpinnerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMBSpinnerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0F4A9415D3CACE005D7D69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE0F4A9615D3CACE005D7D69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,7 +104,6 @@
 		BE0F4A9B15D3CACF005D7D69 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				18881DE21657FD5800C64055 /* image.png */,
 				BE0F4A9C15D3CACF005D7D69 /* SMBSpinnerView-Info.plist */,
 				BE0F4A9D15D3CACF005D7D69 /* InfoPlist.strings */,
 				BE0F4AA015D3CACF005D7D69 /* main.m */,
@@ -189,7 +186,6 @@
 			files = (
 				BE0F4A9F15D3CACF005D7D69 /* InfoPlist.strings in Resources */,
 				BE0F4AAB15D3CACF005D7D69 /* ViewController.xib in Resources */,
-				18881DE31657FD5800C64055 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
