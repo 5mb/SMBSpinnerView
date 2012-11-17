@@ -3,5 +3,5 @@ SMBSpinnerView
 
 SMBSpinnerView
 
-![Screenshot](/image.png)
+![Screenshot](https://raw.github.com/smb-ios/SMBSpinnerView/master/image.png)
 
