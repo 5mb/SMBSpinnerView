@@ -27,11 +27,23 @@
 
 @class SpinnerLayer;
 
+
 @interface SMBSpinnerView : UIView {
+    @private
     SpinnerLayer *_spinnerLayer;
+    UIColor *_color;
+    float _speed;
+    BOOL _hidesWhenStopped;
 }
 //set the color of spinner
 @property(nonatomic, retain) UIColor *color;
+
+//set rotation speed of spinner default=0.2f
+@property(nonatomic, assign) float speed;
+
+//default is YES. calls -setHidden when animating gets set to NO
+@property(nonatomic, assign) BOOL hidesWhenStopped;
+
 //starts rotation animation
 - (void)startAnimation;
 //stops rotation animation

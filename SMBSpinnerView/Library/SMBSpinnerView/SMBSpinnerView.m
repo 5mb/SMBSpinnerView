@@ -27,12 +27,18 @@
 #import "SpinnerLayer.h"
 #import "CALayer+animation.h"
 
+#define DEFAULT_SPEED 0.2f
+
 @implementation SMBSpinnerView
 @synthesize color = _color;
+@synthesize speed = _speed;
+@synthesize hidesWhenStopped = _hidesWhenStopped;
 
 - (id)init {
     if (self=[super init]) {
-        self.color = [UIColor redColor];    //default value
+        self.color = [UIColor lightGrayColor];    //default value
+        _speed = DEFAULT_SPEED;
+        _hidesWhenStopped = YES;
         _spinnerLayer = [[SpinnerLayer alloc] init];
         [self.layer addSublayer:_spinnerLayer];
     }
@@ -44,7 +50,22 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.color = [UIColor redColor];    //default value
+        self.color = [UIColor lightGrayColor];    //default value
+        _speed = DEFAULT_SPEED;
+        _hidesWhenStopped = YES;
+        _spinnerLayer = [[SpinnerLayer alloc] init];
+        [self.layer addSublayer:_spinnerLayer];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // Initialization code
+        self.color = [UIColor lightGrayColor];    //default value
+        _speed = DEFAULT_SPEED;
+        _hidesWhenStopped = YES;
         _spinnerLayer = [[SpinnerLayer alloc] init];
         [self.layer addSublayer:_spinnerLayer];
     }
@@ -69,10 +90,14 @@
 */
 
 - (void)startAnimation {
-    [_spinnerLayer rotateForeverWithSpeed:0.3f CCW:YES];
+    [self setHidden:NO];
+    [_spinnerLayer rotateForeverWithSpeed:_speed CCW:NO];
 }
 
 - (void)stopAnimation {
+    if (_hidesWhenStopped) {
+        [self setHidden:YES];
+    }
     [_spinnerLayer removeRotateForeverAnimation];
 }
 

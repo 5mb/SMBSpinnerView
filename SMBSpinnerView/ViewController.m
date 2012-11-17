@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "SMBSpinnerView.h"
+
 
 @implementation ViewController
+@synthesize spv;
 
 - (void)didReceiveMemoryWarning
 {
@@ -24,16 +25,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    SMBSpinnerView *spv = [[SMBSpinnerView alloc] initWithFrame:CGRectMake(110, 180, 100, 100)];
-    spv.color = [UIColor redColor];
-    //spv.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:spv];
-    [spv startAnimation];
-    [spv release];
+    [self.spv setColor:[UIColor orangeColor]];
+    [self.spv startAnimation];
+    
+    //[self.spv performSelector:@selector(stopAnimation) withObject:nil afterDelay:3.0f];
 }
 
 - (void)viewDidUnload
 {
+    [self setSpv:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -65,4 +65,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [spv release];
+    [super dealloc];
+}
 @end

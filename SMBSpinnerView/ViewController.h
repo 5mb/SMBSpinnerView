@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SMBSpinnerView.h"
 
 @interface ViewController : UIViewController
+
+@property (retain, nonatomic) IBOutlet SMBSpinnerView *spv;
 
 @end

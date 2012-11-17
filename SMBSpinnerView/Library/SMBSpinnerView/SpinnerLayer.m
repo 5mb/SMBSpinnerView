@@ -105,6 +105,9 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
     //draw circle
 	CGContextAddEllipseInRect(ctx, circleRec);
 	CGContextAddArc(ctx, CGRectGetMidX(circleRec), CGRectGetMidY(circleRec), (minDepth/2)-circleBorderWidth, (0-90)*M_PI/180.0, (360-90)*M_PI/180.0, 1);
+    
+    //CGContextAddEllipseInRect(ctx, CGRectInset(circleRec, circleBorderWidth, circleBorderWidth));
+    
 	CGContextClip(ctx);
     
 	CGImageRef img = [self newImageGradientInRect:circleRec];
@@ -116,6 +119,9 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
     
     //draw paths
 	CGContextDrawPath(ctx, kCGPathFill);
+
+    
+
 }
 
 - (CGImageRef)newImageGradientInRect:(CGRect)rect
