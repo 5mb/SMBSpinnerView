@@ -2,8 +2,8 @@
 //  ViewController.m
 //  SMBSpinnerView
 //
-//  Created by sbhuin on 09/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Soumen Bhuin on 09/08/12.
+//  Copyright (c) 2012 SMB. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -29,6 +29,7 @@
     [self.spv startAnimation];
     
     //[self.spv performSelector:@selector(stopAnimation) withObject:nil afterDelay:3.0f];
+    
 }
 
 - (void)viewDidUnload

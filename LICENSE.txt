@@ -1,22 +1,4 @@
-# SMBSpinnerView
-
-Custom Activity Indicator
-
-![Screenshot](https://raw.github.com/smb-ios/SMBSpinnerView/master/image.png)
-
-# INSTALLATION
-
-* Open your XCode project and the SMBSpinnerView project.
-* Drag the "SMBSpinnerView" directory under "Library" directory to your project.
-
-# HOW TO USE:
- 
- SMBSpinnerView *spv = [[SMBSpinnerView alloc] initWithFrame:CGRectMake(20, 20, 100, 100)];
- [spv setColor:[UIColor orangeColor]];
- [self.view addSubview:spv];
- [spv startAnimation];
- 
-# LICENSE
+Copyright (c) 2012 SMB
 
 MIT LICENSE
 

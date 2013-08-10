@@ -2,8 +2,9 @@
 //  CALayer+animation.h
 //  SMBSpinnerView
 //
-//  Created by SMB on 08/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Soumen Bhuin on 08/08/12.
+//  Copyright (c) 2012 SMB. All rights reserved.
+
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of
 //  this software and associated documentation files (the "Software"), to deal in
 //  the Software without restriction, including without limitation the rights to

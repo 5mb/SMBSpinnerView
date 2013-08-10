@@ -2,8 +2,9 @@
 //  SMBSpinnerView.m
 //  SMBSpinnerView
 //
-//  Created by SMB on 09/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Soumen Bhuin on 09/08/12.
+//  Copyright (c) 2012 SMB. All rights reserved.
+
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of
 //  this software and associated documentation files (the "Software"), to deal in
 //  the Software without restriction, including without limitation the rights to
@@ -79,15 +80,6 @@
     [_spinnerLayer setTailColor:[UIColor clearColor]];  //tail color
     [_spinnerLayer setNeedsDisplay];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 - (void)startAnimation {
     [self setHidden:NO];

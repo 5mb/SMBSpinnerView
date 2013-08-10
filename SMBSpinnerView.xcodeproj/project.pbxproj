@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C4F69517B66F3000589E70 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18C4F69417B66F2F00589E70 /* LICENSE.txt */; };
 		BE0F4A9515D3CACE005D7D69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0F4A9415D3CACE005D7D69 /* UIKit.framework */; };
 		BE0F4A9715D3CACE005D7D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0F4A9615D3CACE005D7D69 /* Foundation.framework */; };
 		BE0F4A9915D3CACE005D7D69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0F4A9815D3CACE005D7D69 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18C4F69217B66F0C00589E70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		18C4F69417B66F2F00589E70 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		BE0F4A9015D3CACE005D7D69 /* SMBSpinnerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMBSpinnerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0F4A9415D3CACE005D7D69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE0F4A9615D3CACE005D7D69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +65,8 @@
 		BE0F4A8515D3CACB005D7D69 = {
 			isa = PBXGroup;
 			children = (
+				18C4F69417B66F2F00589E70 /* LICENSE.txt */,
+				18C4F69217B66F0C00589E70 /* README.md */,
 				BE0F4AB115D3CB9D005D7D69 /* Library */,
 				BE0F4A9A15D3CACE005D7D69 /* SMBSpinnerView */,
 				BE0F4A9315D3CACE005D7D69 /* Frameworks */,
@@ -186,6 +191,7 @@
 			files = (
 				BE0F4A9F15D3CACF005D7D69 /* InfoPlist.strings in Resources */,
 				BE0F4AAB15D3CACF005D7D69 /* ViewController.xib in Resources */,
+				18C4F69517B66F3000589E70 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
